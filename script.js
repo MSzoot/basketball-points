@@ -24,6 +24,7 @@ const setHtml = () => {
 
 setHtml(); // set all elements to 0 
 
+// Add points function
 
 const addPoints = (side,points) => {
     if (side == "home" && points === 1){
