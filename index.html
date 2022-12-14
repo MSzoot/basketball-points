@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="grid grid-cols-2 grid-rows-4 bg-cus-blue w-128 h-80 text-center mx-auto mt-36 rounded-t-md"
+    >
+      <h1 class="text-white text-3xl font-bold m-auto my-10">HOME</h1>
+      <h1 class="text-white text-3xl font-bold m-auto my-10">GUEST</h1>
+
+      <div class="w-28 mx-auto bg-black flex rounded-md">
+        <h2
+          id="home-count"
+          class="text-red-400 text-6xl font font-extrabold m-auto"
+        ></h2>
+      </div>
+      <div class="w-28 mx-auto bg-black flex rounded-md">
+        <h2
+          id="guest-count"
+          class="text-red-400 text-6xl font-extrabold m-auto"
+        ></h2>
+      </div>
+
+      <div class="m-auto">
+        <button
+          onclick="addPoints('home', 1)"
+          class="w-9 h-9 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +1
+        </button>
+        <button
+          onclick="addPoints('home', 2)"
+          class="w-9 h-9 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +2
+        </button>
+        <button
+          onclick="addPoints('home',3)"
+          class="w-9 h-9 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +3
+        </button>
+      </div>
+      <div class="m-auto">
+        <button
+          onclick="addPoints('guest',1)"
+          class="w-9 h-9 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +1
+        </button>
+        <button
+          onclick="addPoints('guest',2)"
+          class="w-9 h-9 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +2
+        </button>
+        <button
+          onclick="addPoints('guest',3)"
+          class="w-9 h-9 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +3
+        </button>
+      </div>
+      <div class="w-28 mx-auto flex justify-around">
+        <h2 class="inline-block text-slate-400">Fauls :</h2>
+        <h2 id="home-fauls" class="inline-block text-red-400"></h2>
+        <button
+          onclick="addFaul('home')"
+          class="w-7 h-7 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +
+        </button>
+      </div>
+      <div class="w-28 mx-auto flex justify-around">
+        <h2 class="inline-block text-slate-400">Fauls :</h2>
+        <h2 id="guest-fauls" class="inline-block text-red-400"></h2>
+        <button
+          onclick="addFaul('guest')"
+          class="w-7 h-7 border-solid rounded-md border-2 border-slate-400 text-slate-400"
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div class="mx-auto bg-cus-blue w-128 h-56 rounded-b-md">
+      <div class="flex justify-center mb-6">
+        <h1 class="text-white text-3xl font-bold">Time :</h1>
+        <h1 id="timer" class="text-red-400 text-3xl ml-1 font-bold"></h1>
+      </div>
+      <div class="flex justify-center mt-2">
+        <button
+          onclick="reset()"
+          class="w-72 border-solid rounded-md border-2 border-slate-400 text-slate-400 m-auto text-4xl p-4"
+        >
+          New Game
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
