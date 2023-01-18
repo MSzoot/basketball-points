@@ -5,7 +5,7 @@ const guestCount = document.getElementById("guest-count");
 const homeFauls = document.getElementById("home-fauls");
 const guestFauls = document.getElementById("guest-fauls");
 
-//Set counts
+//Set counts to 0
 
 let hCount = 0;
 let gCount = 0;
