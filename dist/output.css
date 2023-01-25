@@ -652,6 +652,10 @@ video {
   text-align: center;
 }
 
+.font-custom1 {
+  font-family: Custom-1, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -688,4 +692,10 @@ video {
 .text-slate-400 {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: "Custom-1";
+
+  src: url("/Digital.ttf");
 }
