@@ -94,5 +94,5 @@ function countdown( elementName, minutes, seconds )
 }
 
 
-countdown( 'timer', 12, 0 )
+// countdown( 'timer', 12, 0 )
 
